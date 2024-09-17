@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protocolos de IATF</title>
+    <title>Protocolos de IATF com Progestágenos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,14 +11,31 @@
         <h1>Protocolos de IATF com Progestágenos</h1>
     </header>
     <main>
-        <section id="timeline">
-            <h2>Linha do Tempo</h2>
-            <div id="timeline-content"></div>
-        </section>
-        <section id="hormones">
-            <h2>Função dos Hormônios</h2>
-            <div id="hormones-content"></div>
-        </section>
+        <div class="timeline">
+            <div class="timeline-event" id="day-0">
+                <h2>Dia 0 (D0)</h2>
+                <p>Inserção do dispositivo de progestágeno e aplicação de 2 mg de Benzoato de Estradiol (BE).</p>
+            </div>
+            <div class="timeline-event" id="day-7-8">
+                <h2>Dia 7 ou 8 (D7/D8)</h2>
+                <p>Retirada do dispositivo e aplicação de Prostaglandina F2α (PGF2α).</p>
+            </div>
+            <div class="timeline-event" id="day-8-9">
+                <h2>Dia 8 ou 9 (24h após retirada do dispositivo)</h2>
+                <p>Aplicação de 1 mg de Benzoato de Estradiol (BE).</p>
+            </div>
+            <div class="timeline-event" id="day-10-11">
+                <h2>Dia 10 ou 11 (52 a 56 horas após a remoção do dispositivo)</h2>
+                <p>Inseminação Artificial em Tempo Fixo (IATF).</p>
+            </div>
+        </div>
+        <button id="info-btn">Mostrar Função dos Hormônios</button>
+        <div id="info" class="info">
+            <h3>Função dos Hormônios</h3>
+            <p><strong>Progestágeno:</strong> Simula a fase luteínica, inibe a ovulação enquanto está presente.</p>
+            <p><strong>Benzoato de Estradiol (BE):</strong> Promove a regressão do corpo lúteo, estimula o desenvolvimento de um novo folículo.</p>
+            <p><strong>Prostaglandina F2α (PGF2α):</strong> Induz a regressão luteínica e promove o ambiente hormonal para a ovulação.</p>
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
